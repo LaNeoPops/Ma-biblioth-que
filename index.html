@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styls.css" rel="stylesheet">
+    <title>Chez Pauline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"></script>
+</head>
+
+<body>
+
+    <!-- BARRE DE NAVIGATION -->
+    
+    <nav class="bg-red-100 mb-3">
+        <div class="max-w-screen-xl mx-auto p-2">
+            <div class="flex justify-center items-center space-x-3 mb-4">
+                <a href="./index.html" class="flex items-center text-red-950">
+                    <img src="./img/coquelicot.png" class="h-12" alt="Logo Livre" />
+                    <span class="text-6xl font-semibold whitespace-nowrap ml-2">Chez Pauline</span>
+                </a>
+            </div>
+            <div class="w-full md:block md:w-auto text-center">
+                <ul class="font-medium flex flex-col md:flex-row justify-center md:space-x-8 rtl:space-x-reverse">
+                    <li>
+                        <a href="./Pages secondaires/ma-bibli.html" class="block py-1 px-3 text-red-800/90 rounded 
+                    hover:bg-red-300/40">Ma bibliothèque</a>
+                    </li>
+                    <li>
+                        <a href="./Pages secondaires/wishlist.html" class="block py-1 px-3 text-red-800/90 rounded 
+                    hover:bg-red-300/40 text-red-100">WishList</a>
+                    </li>
+                    <li>
+                        <a href="./Pages secondaires/tropes.html" class="block py-1 px-3 text-red-800/90 rounded 
+                    hover:bg-red-300/40 text-red-100">Tropes</a>
+                    </li>
+                    <li>
+                        <a href="./Pages secondaires/films.html" class="block py-1 px-3 text-red-800/90 rounded 
+                    hover:bg-red-300/40 text-red-100">Films/Séries</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- RESTE DE LA PAGE -->
+
+    <main class="w-full">
+
+        <h1 class="text-4xl text-center text-red-800/90 pb-3">Bienvenue chez moi ! </h1>
+
+        <div id="gallery" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="./img/printemps.jpg"
+                        class="absolute block max-h-full w-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item="active">
+                    <img src="./img/été.jpg"
+                        class="absolute block max-h-full w-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="./img/automne.jpg"
+                        class="absolute block max-h-full w-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="./img/hiver.jpg"
+                        class="absolute block max-h-full w-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-300 group-hover:bg-red-400 group-focus:ring-1 group-focus:ring-red-300 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-300 group-hover:bg-red-400 group-focus:ring-1 group-focus:ring-red-300 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+        <h2 class="text-red-800/90 text-center font-medium m-2">Enfin plus précisément dans ma bibliothèque...</h2>
+        <div class="bg-red-50 border border-red-900/50 rounded-lg shadow-lg p-4 mx-4">
+            <h2 class="text-red-800/90 font-bold text-xl pb-2">Quelques mots pour comprendre...</h2>
+            <p class="text-center">Avec ce site internet, tu peux découvrir une (petite) partie de ma bibliothèque actuelle,
+                ma wish-list, ainsi que quelques suggestions : soit en fonction des tropes (thèmes)
+                des livres ou encore par rapport aux films/séries que tu as aimé ! Mais attention,
+                une fois que tu auras commencé à te plonger dans cet univers
+                fait de mots et de papiers, tu ne pourras peut-être plus en sortir...
+            </p>
+            <p class="text-center pt-4">Alors, es-tu bien sur de vouloir faire le grand saut ?</p>
+            <div class="flex justify-around m-2">
+                <button id="oui"
+                    class="bg-red-600/50 rounded border border-red-900/30 shadow-lg px-10 py-1 hover:bg-red-600/40">Oui</button>
+                <button id="non"
+                    class="bg-red-600/50 rounded border border-red-900/30 shadow-lg px-10 py-1 hover:bg-red-600/40">Non</button>
+            </div>
+            <span id="click" class="flex justify-around text-red-800/90 font-bold text-xl"></span>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>

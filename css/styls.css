@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url(../Police/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Police/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+
+nav a span {
+    font-family: 'Playfair';
+}
+
+nav div li {
+    font-family: 'Montserrat';  
+}
+
+body main {
+    font-family: 'Montserrat';
+}
